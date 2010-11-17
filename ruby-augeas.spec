@@ -1,6 +1,6 @@
 Name:           ruby-augeas
 Version:        0.3.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Ruby bindings for Augeas
 Group:          Development/Ruby
 
@@ -12,9 +12,6 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  ruby ruby-devel rubygem(rake)
 BuildRequires:  augeas-devel >= 0.5.1
 BuildRequires:  pkgconfig
-Requires:       ruby(abi) = 1.8
-Requires:       augeas-libs >= 0.5.1
-Provides:       ruby(augeas) = %{version}
 
 %description
 Ruby bindings for augeas.

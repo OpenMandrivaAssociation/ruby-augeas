@@ -1,17 +1,17 @@
 Name:           ruby-augeas
-Version:        0.3.0
-Release:        %mkrel 3
+Version:        0.4.1
+Release:        %mkrel 1
 Summary:        Ruby bindings for Augeas
 Group:          Development/Ruby
 
 License:        LGPLv2+
 URL:            http://augeas.net
 Source0:        http://augeas.net/download/ruby/ruby-augeas-%{version}.tgz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-
-BuildRequires:  ruby ruby-devel ruby-rake ruby-RubyGems
+BuildRequires:  ruby-devel
+BuildRequires:  ruby-rake
+BuildRequires:  ruby-RubyGems
 BuildRequires:  augeas-devel >= 0.5.1
-BuildRequires:  pkgconfig
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Ruby bindings for augeas.
@@ -35,7 +35,7 @@ install -p -m0755 ext/augeas/_augeas.so %{buildroot}%{ruby_sitearchdir}
 rake test
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 
 %files

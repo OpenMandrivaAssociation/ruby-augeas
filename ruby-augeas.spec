@@ -44,3 +44,22 @@ rm -rf %{buildroot}
 %{ruby_sitelibdir}/augeas.rb
 %{ruby_sitearchdir}/_augeas.so
 
+
+
+%changelog
+* Fri May 27 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.4.1-1mdv2011.0
++ Revision: 680313
+- new version
+
+* Mon Jan 10 2011 Michael Scherer <misc@mandriva.org> 0.3.0-3
++ Revision: 630877
+- improve buildRequires, so it can be backported
+
+* Wed Nov 17 2010 Michael Scherer <misc@mandriva.org> 0.3.0-2mdv2011.0
++ Revision: 598138
+- fix Requires
+
+* Tue Nov 16 2010 Michael Scherer <misc@mandriva.org> 0.3.0-1mdv2011.0
++ Revision: 597924
+- import ruby-augeas
+

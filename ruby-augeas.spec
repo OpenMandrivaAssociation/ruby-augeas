@@ -1,6 +1,6 @@
 Name:           ruby-augeas
 Version:        0.4.1
-Release:        2
+Release:        3
 Summary:        Ruby bindings for Augeas
 Group:          Development/Ruby
 

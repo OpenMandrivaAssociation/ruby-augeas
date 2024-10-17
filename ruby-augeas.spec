@@ -5,7 +5,7 @@ Summary:        Ruby bindings for Augeas
 Group:          Development/Ruby
 
 License:        LGPLv2+
-URL:            http://augeas.net
+URL:            https://augeas.net
 Source0:        http://augeas.net/download/ruby/ruby-augeas-%{version}.tgz
 BuildRequires:  ruby-devel
 BuildRequires:  ruby-rake
